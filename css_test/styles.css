@@ -2,6 +2,7 @@
 .nav {
   border-color: rgb(198,189,160);
   border-bottom-style: solid;
+  padding: none;
 }
 
 .logo {
@@ -36,6 +37,7 @@
   background-image: url(./img/splash.jpg);
   background-size: 500% auto;
   background-repeat: no-repeat;
+  padding: none;
 }
 
 .heading h1,h2 {
