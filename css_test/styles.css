@@ -8,13 +8,6 @@
   src: url(./fonts/MuseoSans.otf);
 }
 
-/* DESKTOP CSS */
-.nav {
-  border-color: rgb(198,189,160);
-  border-bottom-style: solid;
-  padding: none;
-}
-
 /* MeetMindful logo container */
 .logo {
   padding: 0px;
@@ -32,67 +25,79 @@
    display: none;
 }
 
+/* NAVBAR STYLING */
+.nav {
+  border-color: rgb(198,189,160);
+  border-bottom-style: solid;
+  padding: none;
+}
+
 .nav a[href^="https://"], a[href^="/blog"], a[href^="/about"] {
   color: rgb(184, 164, 121);
   text-decoration: none;
   position: relative;
-  left: 600px;
+  left: 550px;
   bottom: 30px;
   padding: 15px;
   font-family: "MuseoSans", Times, serif;
   font-size: 25px;
 }
 
+/* HEADER CONTAINER */
 .heading {
-  width: auto;
-  height: 700px;
+  /* position: absolute; */
+  width: 100%;
+  height: 600px;
   background-image: url("./img/splash.jpg");
   background-position: 50% 70%;
   background-repeat: no-repeat;
-  padding: none;
 }
 
+/* HEADER BASE STYLES */
 .heading h1,h2 {
   font-family: "IntroBold", Times, serif;
   position: relative;
-  top: 180px;
+  top: 160px;
   text-align: center;
 }
+/* H1 STYLES */
 .heading h1 {
   color: rgb(141, 140, 158);
   font-size: 50px;
   line-height: 1px;
 }
+/* H2 STYLES */
 .heading h2 {
   color: rgb(101, 105, 138);
   text-transform: lowercase;
   /* text-align: center; */
 }
 
+/* FEATRUES CONTAINER */
 .features {
-  position:absolute;
-  width: 100%;
-  height: 300px;
+  position: absolute;
+  /* width: 100%;
+  height: 300px; */
 }
-
 .features > div{
-  float: right;
+  float: left;
   margin: 10px;
 }
 
+/* FEATURE BASE STYLES */
 .feature {
-  width:250px;
-  height:200px;
+  width: 250px;
+  height: 200px;
   padding: 70px;
   border-right-style: solid;
 }
 
+/* FEATURE TEXT STYLING */
 .feature h3 {
   font-family: "IntroBold", Times, serif;
   text-align: center;
   font-size: 28px;
 }
-
 .feature p {
   font-family: "MuseoSans", Times, serif;
   text-align: justify;
