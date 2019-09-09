@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "IntroBold";
+  src: url(./fonts/IntroBold.otf);
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  src: url(./fonts/MuseoSans.otf);
+}
+
 /* DESKTOP CSS */
 .nav {
   border-color: rgb(198,189,160);
@@ -5,16 +15,19 @@
   padding: none;
 }
 
+/* MeetMindful logo container */
 .logo {
   padding: 0px;
 }
 
+/* Desktop logo */
 .full {
   width: 20%;
   padding: 5px;
   margin-left: 25px;
 }
 
+/* Mobile logo */
 .small{
    display: none;
 }
@@ -26,7 +39,7 @@
   left: 600px;
   bottom: 30px;
   padding: 15px;
-  /* font-family: "Museo Sans", Times, serif; */
+  font-family: "MuseoSans", Times, serif;
   font-size: 25px;
 }
 
@@ -41,6 +54,7 @@
 }
 
 .heading h1,h2 {
+  font-family: "IntroBold", Times, serif;
   position: relative;
   top: 140px;
   text-align: center;
@@ -98,50 +112,16 @@
       font-size: 65px;
     }
 
+    /* Desktop logo */
     .full{
       display: none;
     }
 
+    /* Mobile logo */
     .small{
       display: block;
       width: 8%;
       padding: 10px;
     }
-
-    .heading {
-      position: relative;
-      width: 100%;
-      background-image: url(./img/splash.jpg);
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-    }
-
-    .features {
-      position:absolute;
-      width: auto;
-      height: 800px;
-    }
-
-    .features > div{
-      float: right;
-      margin: 10px;
-    }
-
-    .feature {
-      width:250px;
-      height:200px;
-      padding: 50px;
-      border-right-style: solid;
-    }
-
-    .feature h3 {
-      text-align: center;
-      font-size: 28px;
-    }
-
-    .feature p {
-      text-align: justify;
-    }
-
 
 }
