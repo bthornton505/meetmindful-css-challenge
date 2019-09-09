@@ -86,21 +86,36 @@
 
 /* FEATURE BASE STYLES */
 .feature {
-  width: 250px;
-  height: 200px;
+  background-image: url("./img/chakra.png");
+  background-position: center;
+  background-size: 12%;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 310px;
   padding: 70px;
   border-right-style: solid;
+  border-color: rgb(101, 105, 138);
 }
 
 /* FEATURE TEXT STYLING */
+/* .feature h3, p {
+  padding: 50px;
+} */
 .feature h3 {
   font-family: "IntroBold", Times, serif;
+  color: rgb(101, 105, 138);
   text-align: center;
   font-size: 28px;
+  padding-top: 40px;
+  /* padding-top: 30px; */
 }
 .feature p {
   font-family: "MuseoSans", Times, serif;
+  color: rgb(101, 105, 138);
   text-align: justify;
+  padding-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
