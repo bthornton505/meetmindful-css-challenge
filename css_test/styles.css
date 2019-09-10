@@ -8,14 +8,6 @@
   src: url(./fonts/MuseoSans.otf);
 }
 
-@media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) {
-
-}
-
 /* MeetMindful logo container */
 .logo {
   padding: 0px;
@@ -105,7 +97,25 @@
   padding: 70px;
 }
 
-.feature + .feature{
+@media only screen
+  and (min-device-width: 667px)
+  /* and (max-device-width: 1600px) */
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (min-resolution: 192dpi) {
+
+    .feature + .feature {
+      border-left-style: solid;
+      border-right-style: solid;
+      border-color: rgb(101, 105, 138);
+    }
+
+    .feature + .feature + .feature {
+      border-style: none;
+      border-color: rgb(101, 105, 138);
+    }
+}
+
+/* .feature + .feature{
   border-left-style: solid;
   border-right-style: solid;
   border-color: rgb(101, 105, 138);
@@ -114,7 +124,8 @@
 .feature + .feature + .feature{
   border-style: none;
   border-color: rgb(101, 105, 138);
-}
+} */
+
 /* FEATURE TEXT STYLING */
 /* .feature h3, p {
   padding: 50px;
@@ -137,7 +148,7 @@
 }
 
 
-/* MEDIA QUERY FOR NAV IMAGES */
+/* MEDIA QUERY MOBILE */
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
@@ -153,8 +164,8 @@
       color: rgb(184, 164, 121);
       text-decoration: none;
       position: relative;
-      left: 640px;
-      bottom: 30px;
+      left: 380px;
+      bottom: 40px;
       padding: 15px;
       font-family: "MuseoSans", Times, serif;
       font-size: 40px;
@@ -201,31 +212,24 @@
     .heading h2 {
       color: rgb(101, 105, 138);
       text-transform: lowercase;
-      /* text-align: center; */
     }
 
     /* FEATRUES CONTAINER */
     .features {
       position: relative;
-      top: 690px;
       width: 100%;
-      height: 400px;
-    }
-    .features > div{
-      float: left;
-      margin: 10px;
+      height: 700px;
     }
 
     /* FEATURE BASE STYLES */
     .feature {
       background-image: url("./img/chakra.png");
       background-position: center;
-      background-size: 12%;
+      background-size: 5%;
       background-repeat: no-repeat;
-      width: 340px;
+      width: auto;
       height: 310px;
       padding: 70px;
-      border-bottom-style: solid;
       border-color: rgb(101, 105, 138);
     }
 
@@ -234,18 +238,33 @@
       font-family: "IntroBold", Times, serif;
       color: rgb(101, 105, 138);
       text-align: center;
-      font-size: 28px;
-      padding-top: 40px;
-      /* padding-top: 30px; */
+      font-size: 45px;
+      padding-top: 20px;
     }
     .feature p {
       font-family: "MuseoSans", Times, serif;
       color: rgb(101, 105, 138);
       text-align: justify;
-      padding-top: 80px;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-top: 60px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
-
 }
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .feature + .feature{
+      border-top-style: solid;
+      border-bottom-style: solid;
+      border-color: rgb(101, 105, 138);
+    }
+
+    .feature + .feature + .feature{
+      border-style: none;
+      border-color: rgb(101, 105, 138);
+    }
+  }
